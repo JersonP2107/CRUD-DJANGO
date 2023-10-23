@@ -1,0 +1,45 @@
+{% extends "bases.html" %}
+
+{% block titulo %}  Lista de juegos  {%  endblock  %}
+  
+{%  block contenido  %}   
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Agregar nuevo juego</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Juegos</h4>
+        <div class="table-responsive-md">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td>1</td>
+                        <td>San Andreas</td>
+                        <td>Imagen.jpg</td>
+                        <td>Juego de disparos</td>
+                        <td> 
+                            <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a> 
+                            <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a> 
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{%  endblock  %}

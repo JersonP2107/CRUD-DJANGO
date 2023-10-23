@@ -1,0 +1,19 @@
+{% extends "bases.html" %}
+
+{% block titulo %}  Editar la informacion del juego  {%  endblock  %}
+  
+{%  block contenido  %}   
+
+<div class="card">
+    <div class="card-header">
+        Editar informacion del juego
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del juego</h4>
+        {%  include "juegos/form.html" %}
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{%  endblock  %}
