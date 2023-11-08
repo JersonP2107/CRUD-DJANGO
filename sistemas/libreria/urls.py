@@ -9,4 +9,6 @@ urlpatterns = [
     path("juegos", views.juegos, name="juegos"),
     path("juegos/crear", views.crear, name="crear"),
     path("juegos/editar", views.editar, name="editar"),
+    path("eliminar/<int:id>", views.eliminar, name="eliminar"),
+    path("juegos/editar/<int:id>", views.editar, name="editar"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

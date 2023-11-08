@@ -34,8 +34,8 @@
                         </td>
                         <td>{{ juego.descripcion }}</td>
                         <td> 
-                            <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a> 
-                            <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a> 
+                            <a name="" id="" class="btn btn-info" href="{% url 'editar' juego.id %}" role="button">Editar</a> 
+                            <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' juego.id %}" role="button">Borrar</a> 
                             
                         </td>
                     </tr>
